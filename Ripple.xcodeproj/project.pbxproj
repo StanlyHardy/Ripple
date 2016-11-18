@@ -15,6 +15,8 @@
 		E57B1C0E1DDED028008D3F74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57B1C0C1DDED028008D3F74 /* LaunchScreen.storyboard */; };
 		E57B1C191DDED028008D3F74 /* RippleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E57B1C181DDED028008D3F74 /* RippleTests.m */; };
 		E57B1C241DDED028008D3F74 /* RippleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E57B1C231DDED028008D3F74 /* RippleUITests.m */; };
+		E57B1C401DDED17B008D3F74 /* Ripple.m in Sources */ = {isa = PBXBuildFile; fileRef = E57B1C3F1DDED17B008D3F74 /* Ripple.m */; };
+		E57B1C461DDF1CEA008D3F74 /* maxresdefault.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E57B1C451DDF1CEA008D3F74 /* maxresdefault.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		E57B1C1F1DDED028008D3F74 /* RippleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RippleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57B1C231DDED028008D3F74 /* RippleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RippleUITests.m; sourceTree = "<group>"; };
 		E57B1C251DDED028008D3F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E57B1C3E1DDED17B008D3F74 /* Ripple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ripple.h; sourceTree = "<group>"; };
+		E57B1C3F1DDED17B008D3F74 /* Ripple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ripple.m; sourceTree = "<group>"; };
+		E57B1C451DDF1CEA008D3F74 /* maxresdefault.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maxresdefault.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,8 @@
 		E57B1BFD1DDED028008D3F74 /* Ripple */ = {
 			isa = PBXGroup;
 			children = (
+				E57B1C451DDF1CEA008D3F74 /* maxresdefault.jpg */,
+				E57B1C441DDF1B0C008D3F74 /* Classes */,
 				E57B1C011DDED028008D3F74 /* AppDelegate.h */,
 				E57B1C021DDED028008D3F74 /* AppDelegate.m */,
 				E57B1C041DDED028008D3F74 /* ViewController.h */,
@@ -138,6 +145,15 @@
 				E57B1C251DDED028008D3F74 /* Info.plist */,
 			);
 			path = RippleUITests;
+			sourceTree = "<group>";
+		};
+		E57B1C441DDF1B0C008D3F74 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E57B1C3E1DDED17B008D3F74 /* Ripple.h */,
+				E57B1C3F1DDED17B008D3F74 /* Ripple.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E57B1C0E1DDED028008D3F74 /* LaunchScreen.storyboard in Resources */,
+				E57B1C461DDF1CEA008D3F74 /* maxresdefault.jpg in Resources */,
 				E57B1C0B1DDED028008D3F74 /* Assets.xcassets in Resources */,
 				E57B1C091DDED028008D3F74 /* Main.storyboard in Resources */,
 			);
@@ -271,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E57B1C061DDED028008D3F74 /* ViewController.m in Sources */,
+				E57B1C401DDED17B008D3F74 /* Ripple.m in Sources */,
 				E57B1C031DDED028008D3F74 /* AppDelegate.m in Sources */,
 				E57B1C001DDED028008D3F74 /* main.m in Sources */,
 			);
@@ -498,6 +516,7 @@
 				E57B1C2A1DDED028008D3F74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E57B1C2B1DDED028008D3F74 /* Build configuration list for PBXNativeTarget "RippleTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +525,7 @@
 				E57B1C2D1DDED028008D3F74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E57B1C2E1DDED028008D3F74 /* Build configuration list for PBXNativeTarget "RippleUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +534,7 @@
 				E57B1C301DDED028008D3F74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

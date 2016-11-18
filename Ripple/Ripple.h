@@ -21,11 +21,20 @@
 //SOFTWARE.
 
 
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "AppDelegate.h"
 
-int main(int argc, char * argv[]) {
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
-    }
+@interface Ripple : NSObject <UIGestureRecognizerDelegate>
+{
+    CALayer *rippleLayer;
 }
+@property(nonatomic,strong)UIColor *overlayColor;
+@property(nonatomic)NSArray *colors;
+
++ (Ripple *)sharedCenter;
+
+- (void)rippleWithRandomColor:(UIView *)view inRootView:(UIView *)parentView;
+
+-(void) generateRipples: (UIView* ) view  withTouch: (UITouch *)touch;
+- (void)generateColourfulRipples:(UIView *)view inRootView: (UIView*) parentView center:(CGPoint)center  colorFrom:(UIColor *)colorFrom colorTo:(UIColor *)colorTo;
+@end
